@@ -11,7 +11,7 @@ client = Groq(api_key=os.getenv('API_KEY'))
 response = client.chat.completions.create(
     model='llama-3.3-70b-versatile',
     messages=[
-        {"role":"user" , "content":"Hi There Am Muhammad Atif khan"}
+        {"role":"user" , "content":"which model you have used"}
     ]
 )
 
