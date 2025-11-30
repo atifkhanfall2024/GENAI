@@ -9,3 +9,12 @@
 
 # now how we use that gemini api as a open ai 
 - same code as for groq and also for openai only with additional lines add api key and based url inside openai function 
+
+
+
+## Advance prompt enginerring
+- zero shot
+- one shot
+- few shot
+- chian of thought
+- Automated chain of tought

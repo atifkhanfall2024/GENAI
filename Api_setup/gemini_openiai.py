@@ -11,7 +11,8 @@ client = OpenAI(
 response = client.chat.completions.create(
     model='gemini-2.5-pro',
     messages=[
-        {"role":"user" , "content":"Hi welcome to me am atif"}
+        {"role":"system" , "content":"Hi act as an software enginerr only solve computer science related fields questions as well as ai and data science not solve physics as well as arts subjets questions"},
+        {"role":"user" , "content":"do you know about bohr law"}
     ]
 )
 
