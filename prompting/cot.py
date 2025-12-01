@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 client = OpenAI(
-    api_key='AIzaSyCo3pCXQN82pNIiJFZLxqbodB9dwHdJGyY',
+    api_key='AIzaSyBrCsWNaUbWcwCWnbhnTtPlCsNSa5bQTs8',
     base_url='https://generativelanguage.googleapis.com/v1beta/openai/'
 )
 
@@ -27,6 +27,7 @@ A: your answer will be in json format step by step first start then plain , reas
 
 response = client.chat.completions.create(
     model='gemini-2.5-pro',
+    response_format={'type':'json_object'},
     messages=[
         {"role":"system" , "content":Prompt},
         {"role":"user" , "content":"give me road map to become ai developer"}
