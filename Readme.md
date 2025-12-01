@@ -18,3 +18,4 @@
 - few shot
 - chian of thought
 - Automated chain of tought
+- persona based prompting
